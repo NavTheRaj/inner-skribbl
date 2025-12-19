@@ -1,0 +1,27 @@
+{
+  "name": "inner-skribbl",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Inner Skribbl monorepo with shared types, client, and server packages.",
+  "workspaces": [
+    "shared",
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm:dev --workspace server\" \"npm:dev --workspace client\"",
+    "lint": "npm --workspaces run lint",
+    "format": "npm --workspaces run format"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.16.1",
+    "@typescript-eslint/parser": "^7.16.1",
+    "concurrently": "^8.2.2",
+    "eslint": "^9.7.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.3.3",
+    "tsx": "^4.16.5",
+    "typescript": "^5.5.3",
+    "@types/node": "^22.5.1"
+  }
+}
