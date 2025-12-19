@@ -1,0 +1,14 @@
+{
+  "name": "@inner-skribbl/server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "lint": "eslint \"src/**/*.ts\"",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "dependencies": {
+    "@inner-skribbl/shared": "0.1.0"
+  }
+}
